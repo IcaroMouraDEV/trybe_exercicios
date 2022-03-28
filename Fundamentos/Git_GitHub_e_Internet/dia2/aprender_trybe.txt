@@ -6,5 +6,4 @@ HTML
 CSS
 C
 Ingles Rasoavel
-Javascript
-React
+Angular
