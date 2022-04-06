@@ -112,3 +112,25 @@ if (nota > 0 && nota <= 100) {
 }
 
 //Oitavo Exercício
+const number1 = 1;
+const number2 = 3;
+const number3 = 8;
+
+if (number1 % 2 == 0||
+    number2 % 2 == 0||
+    number3 % 2 == 0) {
+        console.log("true");
+} else {
+    console.log("false");
+}
+
+//Nono Exercício
+if (number1 % 2 == 1||
+    number2 % 2 == 1||
+    number3 % 2 == 1) {
+        console.log("true");
+} else {
+    console.log("false");
+}
+
+//Décimo Exercício
