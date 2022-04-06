@@ -28,16 +28,18 @@ if (num1 > num2 && num1 > num3) {
 } else if (num3 > num1 && num3 > num2) {
     console.log(num3 + " é o maior");
 } else {
-    console.log("algum número é igual");
+    console.error("algum número é igual");
 }
 
 //Quarto Exercício
 const valor = 0;
 
-if (valor >= 0) {
+if (valor > 0) {
     console.log("positive");
-} else {
+} else if (valor < 0){
     console.log("negative");
+} else {
+    console.log("zero");
 }
 
 //Quinto Exercício
@@ -52,11 +54,11 @@ if (angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
         console.log("false");
     }
 } else {
-    console.log("os ângulos tem que ser maior que 0");
+    console.error("os ângulos tem que ser maior que 0");
 }
 
 //Sexto Exercício
-const piece = "QUEEN".toLowerCase();
+const piece = "".toLowerCase();
 
 switch (piece) {
     case "king":
@@ -77,4 +79,36 @@ switch (piece) {
     case "pawn":
         console.log("Pawn -> column or square occupied by an opposing piece, which is diagonally in front of it, on an adjacent file, capturing that piece, one square");
         break;
+    default:
+        console.error("Essa Peça não existe")
 }
+
+//Sétimo exercício
+const nota = 100;
+
+if (nota > 0 && nota <= 100) {
+    switch (nota) {
+        case nota >= 90:
+            console.log("nota A");
+            break;
+        case nota >= 80:
+            console.log("nota B");
+            break;
+        case nota >= 70:
+            console.log("nota C");
+            break;
+        case nota >= 60:
+            console.log("nota D");
+            break;  
+        case nota >= 50:
+            console.log("nota E");
+            break;
+        case nota < 50:
+        console.log("nota F");
+        break;
+    }
+} else {
+    console.error("nota invalida!")
+}
+
+//Oitavo Exercício
