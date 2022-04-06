@@ -134,3 +134,15 @@ if (number1 % 2 == 1||
 }
 
 //Décimo Exercício
+const expenses = 100;
+const price = 180;
+let expensesTax = expenses * 1.2;
+let profit = price - expensesTax;
+let totalProfit;
+
+if (expenses > 0 && price > 0) {
+    totalProfit = profit * 1000;
+    console.log(totalProfit);
+} else {
+    console.error("Custo de produção ou de venda não pode ser menor que 0");
+}
