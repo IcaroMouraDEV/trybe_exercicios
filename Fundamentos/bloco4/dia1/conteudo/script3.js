@@ -6,6 +6,9 @@ if (nota >= 80) {
 else if (nota < 80 && nota >= 60) {
     console.log("Você está na nossa lista de espera");
 }
-else {
+else if (nota < 60) {
     console.log("Você foi reprovada(o)");
+}
+else {
+    console.log("não participou");
 }
