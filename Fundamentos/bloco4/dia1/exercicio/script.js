@@ -80,7 +80,8 @@ switch (piece) {
         console.log("Pawn -> column or square occupied by an opposing piece, which is diagonally in front of it, on an adjacent file, capturing that piece, one square");
         break;
     default:
-        console.error("Essa Peça não existe")
+        console.error("Essa Peça não existe");
+        break;
 }
 
 //Sétimo exercício
@@ -145,4 +146,44 @@ if (expenses > 0 && price > 0) {
     console.log(totalProfit);
 } else {
     console.error("Custo de produção ou de venda não pode ser menor que 0");
+}
+
+//Décimo primeiro Exercício
+//EU NÃO TRABALHARIA DE CARTEIRA ASSINADA, MAS AJUDAR QUEM FAZ ISSO, PJ É O FUTURO
+let grossWage = 3000;
+let netWage = 0;
+let retirement = 0;
+let incomeTax = 0;
+
+if (grossWage >= 0) {
+
+    if ( grossWage < 1556.94){
+        retirement = grossWage * 0.08;
+    } else if (grossWage >= 1556.95 && grossWage < 2594.92) {
+        retirement = grossWage * 0.09;
+    } else if (grossWage >= 2594.93 && grossWage < 5189.82) {
+        retirement = grossWage * 0.11;
+    } else {
+        retirement = 570.88;
+    }
+            
+    netWage = grossWage - retirement;
+
+    if (netWage < 1903.98) {
+        incomeTax = 0;
+    } else if (netWage >= 1903.98 && netWage < 2826.65) {
+        incomeTax = (netWage * 0.075) - 142.8;
+    } else if (netWage >= 2826.66 && 3751.05) {
+        incomeTax = (netWage * 0.15) - 354.8;
+    } else if (netWage >= 3751.06 && netWage < 4664.68) {
+        incomeTax = (netWage * 0.225) - 636.13;
+    } else {
+        incomeTax = (netWage * 0.275) - 869.36;
+    }         
+    
+    netWage = netWage - incomeTax;
+
+    console.log(netWage);
+} else {
+    console.error("o salário não pode ser negativo.")
 }
