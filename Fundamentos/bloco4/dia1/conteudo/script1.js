@@ -4,6 +4,7 @@ const birthCity = "Petrolina-Pe";
 const birthYear = 2003;
 birthYear = 2030;
 birthCity = "Uauá-Ba";
+
 //Mostrando no console
 console.log(myName);
 console.log(birthCity);
