@@ -49,3 +49,29 @@ if (result > 0) {
 }
 
 // Exercício 7
+let menor = numbers[0];
+
+for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] < menor) {
+        menor = numbers[i];
+    } 
+}
+
+console.log (menor);
+
+// Exercício 8
+let maxArray = 0;
+let array = {};
+
+for (let i = 0; i < 25; i += 1) {
+    maxArray = i + 1
+    array[i] = maxArray;
+}
+console.log(array);
+
+// Exercício 9
+let div = 0;
+for (let i = 0; i < 25; i += 1) {
+    div = array[i] / 2;
+    console.log(div);
+}
