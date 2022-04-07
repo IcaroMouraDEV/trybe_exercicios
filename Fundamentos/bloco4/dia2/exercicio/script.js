@@ -21,3 +21,16 @@ if ((somaArray / numbers.length) > 20) {
 } else {
     console.log("valor menor ou igual a 20");
 }
+
+// Exercício 5
+let maior = numbers[0];
+
+for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] > maior) {
+        maior = numbers[i];
+    } 
+}
+
+console.log (maior);
+
+// Exercício 6
