@@ -34,3 +34,18 @@ for (let i = 0; i < numbers.length; i += 1) {
 console.log (maior);
 
 // Exercício 6
+let result = 0;
+
+for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] % 2 !== 0) {
+        result += 1;
+    }
+}
+
+if (result > 0) {
+    console.log(result);
+} else {
+    console.log("nenhum valor ímpar encontrado");
+}
+
+// Exercício 7
