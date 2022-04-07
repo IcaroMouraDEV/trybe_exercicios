@@ -16,3 +16,8 @@ console.log(somaArray);
 console.log(somaArray / numbers.length);
 
 // Exercício 4
+if ((somaArray / numbers.length) > 20) {
+    console.log("valor maior que 20");
+} else {
+    console.log("valor menor ou igual a 20");
+}
