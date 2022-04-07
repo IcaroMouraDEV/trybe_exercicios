@@ -11,3 +11,8 @@ for (let i = 0; i < numbers.length; i += 1) {
 }
 
 console.log(somaArray);
+
+// Exercício 3
+console.log(somaArray / numbers.length);
+
+// Exercício 4
