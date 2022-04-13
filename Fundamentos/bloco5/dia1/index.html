@@ -60,7 +60,7 @@
             p.innerHTML = "rico e feliz";
         }
         changeP();
-        
+
         function changeC() {
             let c = document.getElementsByClassName('main-content')[0];
             c.style.backgroundColor = 'rgb(76,164,109)';
@@ -77,6 +77,20 @@
             document.getElementsByClassName('title')[0].innerHTML = 'JavaScript';
         }
         changeH();
+
+        function upper() {
+            let upper = document.getElementsByTagName('p')[0];
+            upper.innerHTML = upper.innerHTML.toUpperCase();
+        }
+        upper();
+
+        function cons() {
+            let paragraphs = document.getElementsByTagName('p');
+            for (let index = 0; index < paragraphs.length; index += 1) {
+                console.log(paragraphs[index].innerHTML);
+            }
+        }
+        cons();
     </script>
   </body>
 </html>
