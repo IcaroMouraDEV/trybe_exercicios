@@ -54,8 +54,29 @@
         Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         Crie uma função que exiba o conteúdo de todas as tags <p> no console.
             */
-
+        // Desafio 1
+        function changeP() {
+            let p = document.getElementsByTagName('p')[1];
+            p.innerHTML = "rico e feliz";
+        }
+        changeP();
         
+        function changeC() {
+            let c = document.getElementsByClassName('main-content')[0];
+            c.style.backgroundColor = 'rgb(76,164,109)';
+        }
+        changeC();
+
+        function changeC1() {
+            let c1 = document.getElementsByClassName('center-content')[0];
+            c1.style.backgroundColor = 'rgb(255,255,255)';
+        }
+        changeC1();
+
+        function changeH() {
+            document.getElementsByClassName('title')[0].innerHTML = 'JavaScript';
+        }
+        changeH();
     </script>
   </body>
 </html>
