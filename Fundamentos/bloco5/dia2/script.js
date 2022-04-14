@@ -55,3 +55,10 @@ for (let i = 0; i < liValues.length; i += 1) {
 
     ul.appendChild(li);
 }
+
+// Exercício 9
+for (let i = 0; i < 3; i+= 1) {
+    let title3 = document.createElement('h3');
+
+    main.appendChild(title3);
+}
