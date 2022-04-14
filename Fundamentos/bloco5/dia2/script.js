@@ -24,11 +24,13 @@ p.innerHTML = 'Dinheiro é bom d+';
 section.appendChild(p);
 
 // Exercício 5
-section.className = 'left-content';
+let sectionL = document.createElement('section');
+sectionL.className = 'left-content';
 
-main.appendChild(section);
+main.appendChild(sectionL);
 
 // Exercício 6
-section.className = 'right-content';
+let sectionR = document.createElement('section');
+sectionR.className = 'right-content';
 
-main.appendChild(section);
+main.appendChild(sectionR);
