@@ -71,3 +71,8 @@ title.className = 'title';
 
 // Exercício 12
 main.removeChild(sectionL);
+
+// Exercício 13
+sectionR.style.marginRight = 'auto';
+
+main.appendChild(sectionR);
