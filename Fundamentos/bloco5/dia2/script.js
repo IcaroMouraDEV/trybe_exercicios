@@ -79,3 +79,7 @@ main.appendChild(sectionR);
 
 // Exercício 14
 section.parentElement.style.backgroundColor = 'green';
+
+// Exercício 15
+ul.lastChild.remove();
+ul.lastChild.remove();
