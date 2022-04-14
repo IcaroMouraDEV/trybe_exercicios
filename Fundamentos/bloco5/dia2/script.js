@@ -34,3 +34,10 @@ let sectionR = document.createElement('section');
 sectionR.className = 'right-content';
 
 main.appendChild(sectionR);
+
+// Exercício 7
+let image = document.createElement('img');
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+
+sectionL.appendChild(image);
