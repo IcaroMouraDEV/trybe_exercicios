@@ -62,10 +62,12 @@ for (let i = 0; i < 3; i+= 1) {
 
     // Exercício 11
     title3.className = 'description';
-    
+
     main.appendChild(title3);
 }
 
 // Exercício 10
 title.className = 'title';
 
+// Exercício 12
+main.removeChild(sectionL);
