@@ -1,5 +1,5 @@
-Exercicios desenvolvidos na trybe
+# Exercicios desenvolvidos na trybe
 
-atualmente estamos utilizando o GIT, GITHUB, BASH.
+## atualmente estamos utilizando o GIT, GITHUB, BASH, GIT, GITHUB, HTML, CCS, JavaScript ...
 
-iremos desenvolver com GIT, GITHUB, HTML, CCS, JavaScript ...
+
