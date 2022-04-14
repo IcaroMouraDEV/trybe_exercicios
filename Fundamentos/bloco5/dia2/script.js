@@ -60,8 +60,12 @@ for (let i = 0; i < liValues.length; i += 1) {
 for (let i = 0; i < 3; i+= 1) {
     let title3 = document.createElement('h3');
 
+    // Exercício 11
+    title3.className = 'description';
+    
     main.appendChild(title3);
 }
 
 // Exercício 10
 title.className = 'title';
+
