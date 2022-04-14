@@ -76,3 +76,6 @@ main.removeChild(sectionL);
 sectionR.style.marginRight = 'auto';
 
 main.appendChild(sectionR);
+
+// Exercício 14
+section.parentElement.style.backgroundColor = 'green';
