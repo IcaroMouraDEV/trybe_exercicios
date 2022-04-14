@@ -1,9 +1,9 @@
 // Exercício 1
 let body = document.querySelector('body');
-let finalTitle = document.createElement('h1');
-finalTitle.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+let title = document.createElement('h1');
+title.innerHTML = 'Exercício 5.2 - JavaScript DOM';
 
-body.appendChild(finalTitle);
+body.appendChild(title);
 
 // Exercício 2
 let main = document.createElement('main');
@@ -62,3 +62,6 @@ for (let i = 0; i < 3; i+= 1) {
 
     main.appendChild(title3);
 }
+
+// Exercício 10
+title.className = 'title';
