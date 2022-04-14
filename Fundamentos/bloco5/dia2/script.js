@@ -15,4 +15,10 @@ body.appendChild(main);
 let section = document.createElement('section');
 section.className = 'center-content';
 
-main.appendChild(section)
+main.appendChild(section);
+
+// Exercício 4
+let p = document.createElement('p');
+p.innerHTML = 'Dinheiro é bom d+';
+
+section.appendChild(p);
