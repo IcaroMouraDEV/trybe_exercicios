@@ -22,3 +22,13 @@ let p = document.createElement('p');
 p.innerHTML = 'Dinheiro é bom d+';
 
 section.appendChild(p);
+
+// Exercício 5
+section.className = 'left-content';
+
+main.appendChild(section);
+
+// Exercício 6
+section.className = 'right-content';
+
+main.appendChild(section);
