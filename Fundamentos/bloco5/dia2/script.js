@@ -41,3 +41,17 @@ image.src = 'https://picsum.photos/200';
 image.className = 'small-image';
 
 sectionL.appendChild(image);
+
+// Exercício 8
+let ul = document.createElement('ul');
+let liValues = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+sectionR.appendChild(ul);
+
+for (let i = 0; i < liValues.length; i += 1) {
+    let value = liValues[i];
+    let li = document.createElement('li');
+    li.innerHTML = value;
+
+    ul.appendChild(li);
+}
