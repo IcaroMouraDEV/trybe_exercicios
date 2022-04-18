@@ -60,3 +60,15 @@ function assignDaysOfTheMonth() {
 }
 
 assignDaysOfTheMonth();
+
+function assignDaysOfHoliday() {
+    const button = document.createElement('button');
+    button.id = "btn-holiday";
+    button.name = 'holydays';
+    button.innerHTML = 'holydays';
+    const div = document.querySelector('.buttons-container');
+    
+    div.appendChild(button);
+}
+
+assignDaysOfHoliday();
