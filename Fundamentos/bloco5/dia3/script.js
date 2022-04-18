@@ -64,10 +64,10 @@ assignDaysOfTheMonth();
 function assignDaysOfHoliday() {
   let button = document.createElement("button");
   let div = document.querySelector(".buttons-container");
-  let id = 'btn-holiday';
+  let id = "btn-holiday";
 
   button.id = id;
-  button.innerHTML = 'holiday';
+  button.innerHTML = "holiday";
 
   div.appendChild(button);
 }
@@ -75,33 +75,52 @@ function assignDaysOfHoliday() {
 assignDaysOfHoliday();
 
 function colorDaysOfHoliday() {
- let button = document.querySelector('#btn-holiday');
- let holiday = document.querySelectorAll('.holiday');
- let backgroundColor = 'rgb(238,238,238)';
- let setNewBackgroundColor = 'white';
+  let button = document.querySelector("#btn-holiday");
+  let holiday = document.querySelectorAll(".holiday");
+  let backgroundColor = "rgb(238,238,238)";
+  let setNewBackgroundColor = "white";
 
- button.addEventListener('click', function() {
-     for (let i = 0; i < holiday.length; i += 1) {
-         if (holiday[i].style.backgroundColor === setNewBackgroundColor) {
-            holiday[i].style.backgroundColor = backgroundColor;
-         } else {
-            holiday[i].style.backgroundColor = setNewBackgroundColor;
-         }
-     }
- })
-};
+  button.addEventListener("click", function () {
+    for (let i = 0; i < holiday.length; i += 1) {
+      if (holiday[i].style.backgroundColor === setNewBackgroundColor) {
+        holiday[i].style.backgroundColor = backgroundColor;
+      } else {
+        holiday[i].style.backgroundColor = setNewBackgroundColor;
+      }
+    }
+  });
+}
 
 colorDaysOfHoliday();
 
 function assignDaysOfFriday() {
-    let button = document.createElement("button");
-    let div = document.querySelector(".buttons-container");
-    let id = 'btn-friday';
+  let button = document.createElement("button");
+  let div = document.querySelector(".buttons-container");
+  let id = "btn-friday";
+
+  button.id = id;
+  button.innerHTML = "friday";
+
+  div.appendChild(button);
+}
+
+assignDaysOfFriday();
+
+function colorDaysOfFriday() {
+    let button = document.querySelector("#btn-friday");
+    let friday = document.querySelectorAll(".friday");
+    let backgroundColor = "rgb(238,238,238)";
+    let setNewBackgroundColor = "white";
   
-    button.id = id;
-    button.innerHTML = 'friday';
-  
-    div.appendChild(button);
+    button.addEventListener("click", function () {
+      for (let i = 0; i < friday.length; i += 1) {
+        if (friday[i].style.backgroundColor === setNewBackgroundColor) {
+          friday[i].style.backgroundColor = backgroundColor;
+        } else {
+          friday[i].style.backgroundColor = setNewBackgroundColor;
+        }
+      }
+    });
   }
-  
-  assignDaysOfFriday()
+
+  colorDaysOfFriday()
