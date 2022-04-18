@@ -147,7 +147,7 @@ zoomUp();
 zoomDown();
 
 function task() {
-    let tasks = document.querySelector('.my-tasks')
+    let tasks = document.querySelector('.my-tasks');
     let span = document.createElement('span');
     span.innerHTML = 'Viajar com a Família';
 
@@ -155,3 +155,15 @@ function task() {
 }
 
 task();
+
+function taskItem() {
+    
+    let divFather = document.querySelector('.my-tasks');
+    let div = document.createElement('div');
+    div.className = 'task';
+    div.style.backgroundColor = 'green';
+
+    divFather.appendChild(div);
+}
+
+taskItem();
