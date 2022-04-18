@@ -107,68 +107,67 @@ function assignDaysOfFriday() {
 assignDaysOfFriday();
 
 function colorDaysOfFriday() {
-    let button = document.querySelector("#btn-friday");
-    let friday = document.querySelectorAll(".friday");
-    let backgroundColor = "rgb(238,238,238)";
-    let setNewBackgroundColor = "white";
-  
-    button.addEventListener("click", function () {
-      for (let i = 0; i < friday.length; i += 1) {
-        if (friday[i].style.backgroundColor === setNewBackgroundColor) {
-          friday[i].style.backgroundColor = backgroundColor;
-        } else {
-          friday[i].style.backgroundColor = setNewBackgroundColor;
-        }
-      }
-    });
-  }
+  let button = document.querySelector("#btn-friday");
+  let friday = document.querySelectorAll(".friday");
+  let backgroundColor = "rgb(238,238,238)";
+  let setNewBackgroundColor = "white";
 
-  colorDaysOfFriday()
+  button.addEventListener("click", function () {
+    for (let i = 0; i < friday.length; i += 1) {
+      if (friday[i].style.backgroundColor === setNewBackgroundColor) {
+        friday[i].style.backgroundColor = backgroundColor;
+      } else {
+        friday[i].style.backgroundColor = setNewBackgroundColor;
+      }
+    }
+  });
+}
+
+colorDaysOfFriday();
 
 function zoomUp() {
-    let days = document.querySelector('#days');
+  let days = document.querySelector("#days");
 
-    days.addEventListener("mouseover", function(event) {
-        event.target.style.fontSize = '30px';
-        event.target.style.fontWeight = '600';
-    })
-};
+  days.addEventListener("mouseover", function (event) {
+    event.target.style.fontSize = "30px";
+    event.target.style.fontWeight = "600";
+  });
+}
 
 function zoomDown() {
-    let days = document.querySelector('#days');
+  let days = document.querySelector("#days");
 
-    days.addEventListener("mouseout", function(event) {
-        event.target.style.fontSize = '20px';
-        event.target.style.fontWeight = '200';
-    })
-};
+  days.addEventListener("mouseout", function (event) {
+    event.target.style.fontSize = "20px";
+    event.target.style.fontWeight = "200";
+  });
+}
 
 zoomUp();
 zoomDown();
 
 function task() {
-    let tasks = document.querySelector('.my-tasks');
-    let span = document.createElement('span');
-    span.innerHTML = 'Viajar com a Família';
+  let tasks = document.querySelector(".my-tasks");
+  let span = document.createElement("span");
+  span.innerHTML = "Viajar com a Família";
 
-    tasks.appendChild(span);
+  tasks.appendChild(span);
 }
 
 task();
 
 function taskItem() {
-    
-    let divFather = document.querySelector('.my-tasks');
-    let div = document.createElement('div');
-    div.className = 'task';
-    div.style.backgroundColor = 'green';
+  let divFather = document.querySelector(".my-tasks");
+  let div = document.createElement("div");
+  div.className = "task";
+  div.style.backgroundColor = "green";
 
-    divFather.appendChild(div);
+  divFather.appendChild(div);
 }
 
 taskItem();
 
-function setTaskClass() {
+/* function setTaskClass() {
     let selectedTask = document.getElementsByClassName('task selected');
     let myTasks = document.querySelector('.task');
   
@@ -200,4 +199,4 @@ function setTaskClass() {
     });
   };
   
-  setDayColor();
+  setDayColor(); */
