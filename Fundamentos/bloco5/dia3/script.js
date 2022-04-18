@@ -62,13 +62,33 @@ function assignDaysOfTheMonth() {
 assignDaysOfTheMonth();
 
 function assignDaysOfHoliday() {
-    const button = document.createElement('button');
-    button.id = "btn-holiday";
-    button.name = 'holydays';
-    button.innerHTML = 'holydays';
-    const div = document.querySelector('.buttons-container');
-    
-    div.appendChild(button);
+  let button = document.createElement("button");
+  let div = document.querySelector(".buttons-container");
+  let id = 'btn-holiday';
+
+  button.id = id;
+  button.innerHTML = 'holiday';
+
+  div.appendChild(button);
 }
 
 assignDaysOfHoliday();
+
+function colorDaysOfHoliday() {
+ let button = document.querySelector('#btn-holiday');
+ let holiday = document.querySelectorAll('.holiday');
+ let backgroundColor = 'rgb(238,238,238)';
+ let setNewBackgroundColor = 'white';
+
+ button.addEventListener('click', function() {
+     for (let i = 0; i < holiday.length; i += 1) {
+         if (holiday[i].style.backgroundColor === setNewBackgroundColor) {
+            holiday[i].style.backgroundColor = backgroundColor;
+         } else {
+            holiday[i].style.backgroundColor = setNewBackgroundColor;
+         }
+     }
+ })
+};
+
+colorDaysOfHoliday();
