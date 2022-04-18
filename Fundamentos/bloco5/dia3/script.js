@@ -92,3 +92,16 @@ function colorDaysOfHoliday() {
 };
 
 colorDaysOfHoliday();
+
+function assignDaysOfFriday() {
+    let button = document.createElement("button");
+    let div = document.querySelector(".buttons-container");
+    let id = 'btn-friday';
+  
+    button.id = id;
+    button.innerHTML = 'friday';
+  
+    div.appendChild(button);
+  }
+  
+  assignDaysOfFriday()
