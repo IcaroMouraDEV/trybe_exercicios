@@ -13,57 +13,61 @@
 
 <body>
     <form class="form-control">
-        <h1>Form</h1>
-        <div class="container">
-            <label class="form-label" for="name">Nome:
-                <input type="text" name="name" class="form-input" id="name" placeholder="Ícaro Joel" required
+        <h1 class="display-4 text-center">Form</h1>
+        <div class="container mb-3">
+            <label class="form-label" for="name">Nome:</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Ícaro Joel" required
                     minlength="10" maxlength="40">
-            </label>
+            
         </div>
-        <div class="item">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="icaro@gmail.com" required minlength="10"
-                maxlength="40">
+        <div class="container mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="icaro@gmail.com" required
+                minlength="10" maxlength="40">
 
         </div>
-        <div class="container">
+        <div class="container mb-3">
             <div class="form-check">
-                <input type="radio" class="form-input-check" name="lugar" id="lugar1" value="cidade">
+                <input type="radio" class="form-check-input" name="lugar" id="lugar1" value="cidade">
                 <label for="lugar1" class="form-check-label">Cidade</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-input-check" name="lugar" id="lugar2" value="campo">
-            <label for="lugar2" class="form-check-label">Campo</label>
+                <input type="radio" class="form-check-input" name="lugar" id="lugar2" value="campo">
+                <label for="lugar2" class="form-check-label">Campo</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-input-check" name="lugar" id="lugar3" value="praia">
-            <label for="lugar3" class="form-check-label">Praia</label>
+                <input type="radio" class="form-check-input" name="lugar" id="lugar3" value="praia">
+                <label for="lugar3" class="form-check-label">Praia</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-input-check" name="lugar" id="lugar4" value="montanha">
-            <label for="lugar4" class="form-check-label">Montanhas</label>
-            </div> 
+                <input type="radio" class="form-check-input" name="lugar" id="lugar4" value="montanha">
+                <label for="lugar4" class="form-check-label">Montanhas</label>
+            </div>
         </div>
-        <div class="item">
-            <label for="text">
-                <textarea name="text" id="text" cols="30" rows="5" maxlength="500"></textarea>
-            </label>
+        <div class="container mb-3">
+            <textarea name="text" class="form-control" id="text" cols="30" rows="5" maxlength="500"></textarea>
+
         </div>
-        <div class="item">
-            <label for="date">Qual a melhor data para realizar sua viagem?</label>
-            <input type="date" name="date" id="date">
+        <div class="container mb-3">
+            <label for="date" class="form-label">Qual a melhor data para realizar sua viagem?</label><br>
+            <input type="date" class="form-input" name="date" id="date">
         </div>
-        <div class="item column">
-            <label for="check1" class="form-label">
-                Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-            </label>
-            <input type="checkbox" class="form-check-input" name="concordo" id="check1">
-            <label class="form-label" for="check2">
-                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-            </label>
-            <input type="checkbox" class="form-check-input" name="concordo" id="check2">
+        <div class="container mb-3">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="concordo" id="check1">
+                <label for="check1" class="form-check-label">
+                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="concordo" id="check2">
+                <label class="form-check-label" for="check2">
+                    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+
         </div>
-        <div class="btn">
+        <div class="col-2 mx-auto">
             <button type="submit" class="btn btn-success" id="submit">Enviar</button>
             <button type="reset" class="btn btn-danger">Apagar</button>
         </div>
