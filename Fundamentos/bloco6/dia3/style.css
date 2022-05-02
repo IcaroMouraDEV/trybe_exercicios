@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
-    background-color: #111111;
-    color: whitesmoke;
+  background-color: #111111;
+  color: whitesmoke;
 }
 
 .header-img {
@@ -24,49 +24,50 @@ body {
 }
 
 .display {
-    display: flex;
+  display: flex;
 }
 
 .header {
-    background-color: #555555;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2.5%;
+  background-color: #555555;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5%;
 }
 
 .section {
-    font-size: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .content-img {
-    margin: 5% 0;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.grid-img {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    width: 450px;
+  margin: 5% 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.img img{
-    width: 150px;
-    height: 150px;
+.grid-img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.img img {
+  width: 150px;
+  height: 150px;
 }
 
 .footer {
-    height: 90px;
-    justify-content: center;
-    align-items: center;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer a img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
