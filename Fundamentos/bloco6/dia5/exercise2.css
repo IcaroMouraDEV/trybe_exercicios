@@ -117,5 +117,23 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
+    header nav ul li:hover {
+        background-color: #f1f1ff;
+    }
+    aside h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 
+    .main-content h1 {
+        margin-bottom: 40px;
+    }
+
+    .main-content p {
+        margin-bottom: 20px;
+    }
+
+    footer h3 {
+        margin: 40px 0;
+    }
 }
