@@ -87,12 +87,33 @@ footer p {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 800px) {
+    header p {
+        font-size: 3rem;
+    }
+    
+    aside h2 {
+        font-size: 2rem;
+    }
 
-}
+    aside ul li {
+        font-size: 1.2rem;
+        letter-spacing: 0.03rem;
+    }
 
-@media screen and (min-width: 600px) {
+    .main-content p {
+        font-size: 1.2rem;
+        letter-spacing: 0.03rem;
+    }
 
+    footer h3 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+        letter-spacing: 0.03px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
