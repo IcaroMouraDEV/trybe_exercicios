@@ -45,3 +45,27 @@
   figcaption {
     font-size: .8em;
   }
+
+  @media screen and (max-width: 800px) {
+    main, header {
+        text-align: center;
+    }
+    article {
+        font-size: 1.1rem;
+    }
+    figure {
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    main, header {
+        text-align: center;
+    }
+    figure {
+        text-align: center;
+    }
+    img {
+        width: 80%;
+    }
+  }
