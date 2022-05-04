@@ -9,33 +9,9 @@
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
-  body {
-  
-  }
-  
-  article {
-  
-  }
-  
-  h1 {
-  
-  }
-  
-  h2 {
-  
-  }
-  
+
   img {
       max-width: 100%;
-  }
-  
-  main {
-  
-  }
-  
-  section {
-  
   }
   
   figure {
@@ -56,16 +32,53 @@
     figure {
         text-align: center;
     }
+    figcaption {
+        font-size: 1rem;
+    }
   }
 
   @media screen and (max-width: 500px) {
     main, header {
         text-align: center;
     }
+    article {
+        font-size: 1rem;
+    }
     figure {
         text-align: center;
+    }
+    figcaption {
+        font-size: 0.9rem;
     }
     img {
         width: 80%;
     }
+  }
+
+  @media screen and (max-width: 1366px) {
+      body {
+          font-size: 1.2rem;
+      }
+      header {
+          text-align: center;
+          font-size: 2rem;
+      }
+      section {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+      }
+      figure {
+          border: 1px solid #a1a1ff;
+          margin-bottom: 2px;
+          margin-left: 2px;
+      }
+      figcaption {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-bottom: 2px;
+      }
+      img {
+          margin: 5px;
+      }
   }
