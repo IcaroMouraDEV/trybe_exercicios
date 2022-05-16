@@ -71,8 +71,27 @@ const dragon = {
 const battleMembers = { mage, warrior, dragon };
 
 const dragonDmg = (dragon) => {
-  minDmg = 15;
+  const minDmg = 15;
   return Math.floor(Math.random() * (dragon.strength - minDmg + 1) + minDmg);
 }
 
-console.log(dragonDmg(dragon))
+const warriorDmg = (warrior) => {
+  const minDmg = warrior.strength;
+  const maxDmg = minDmg * warrior.weaponDmg;
+  return Math.floor(Math.random() * (maxDmg - minDmg + 1) + minDmg);
+}
+
+const mageDmg = (mage) => {
+  const minDmg = mage.intelligence;
+  const maxDmg = minDmg * 2;
+  let mana = mage.mana;
+
+  if (mana < 15) { 
+    return {dano: 'Não possui mana suficiente', manaGasta: 0}; 
+  } else {
+    mana -= 15;
+    const damage =  Math.floor(Math.random() * (maxDmg - minDmg + 1) + minDmg);
+    return {dano: damage, manaGasta: 15};
+  }
+}
+
