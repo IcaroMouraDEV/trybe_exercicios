@@ -95,3 +95,10 @@ function booksOrderedByReleaseYearDesc(book) {
 }
 
 console.log(booksOrderedByReleaseYearDesc(books));
+
+// Exercício 5
+function everyoneWasBornOnSecXX(book) {
+  return book.every(element => element.author.birthYear > 1900 && element.author.birthYear < 2000);
+}
+
+console.log(everyoneWasBornOnSecXX(books));
