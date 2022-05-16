@@ -81,3 +81,10 @@ function smallerName(book) {
 }
 
 console.log(smallerName(books))
+
+// Exercício 3
+function getNamedBook(book) {
+  return book.some(element => element.name.length === 26)
+}
+
+console.log(getNamedBook(books));
