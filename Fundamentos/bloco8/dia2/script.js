@@ -109,3 +109,11 @@ function someBookWasReleaseOnThe80s(book) {
 }
 
 console.log(someBookWasReleaseOnThe80s(books));
+
+// Exercício 7
+function authorUnique(book) {
+  return books.every((book) => !books.some((bookSome) =>
+    (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)));
+}
+
+console.log(authorUnique(books));
