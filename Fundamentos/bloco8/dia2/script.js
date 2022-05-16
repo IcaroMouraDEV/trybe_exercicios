@@ -88,3 +88,10 @@ function getNamedBook(book) {
 }
 
 console.log(getNamedBook(books));
+
+// Exercício 4
+function booksOrderedByReleaseYearDesc(book) {
+  return book.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear);
+}
+
+console.log(booksOrderedByReleaseYearDesc(books));
