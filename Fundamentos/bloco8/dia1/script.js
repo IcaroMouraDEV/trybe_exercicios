@@ -16,7 +16,6 @@ const employeesGenerator = (name) => {
 console.log(newEmployees(employeesGenerator));
 
 // Exercício 2
-
 const sorteio = (playerNumber, verify) => {
   const numSorteado = Math.floor((Math.random() * 5) + 1);
 
@@ -28,3 +27,22 @@ const verifyNumber = (playerNumber, sorteadoNumber) => playerNumber === sorteado
 console.log(sorteio(3, verifyNumber));
 
 // Exercício 3
+const gabarito = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const estudante = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+const corrigir = (student, correctAnswer) => {
+  let nota = 0;
+
+  for (let index = 0; index < correctAnswer.length; index += 1) {
+    if (student[index] === 'N.A') { 
+      nota += 0; 
+    } else if (student[index] === correctAnswer[index]) { 
+      nota += 1; 
+    } else { 
+      nota -= 0.5; 
+    }
+  }
+
+  return nota;
+}
+
+console.log(corrigir(estudante, gabarito));
