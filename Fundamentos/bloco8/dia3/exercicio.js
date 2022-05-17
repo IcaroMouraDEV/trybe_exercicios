@@ -68,8 +68,6 @@ function formatBookNames(book) {
   return book.map( (element) => `${element.name} - ${element.genre} - ${element.author.name}` );
 }
 
-console.log(formatBookNames(books));
-
 // Exercício 2
 function nameAndAge(book) {
   return book.map( (element) => { 
@@ -77,11 +75,14 @@ function nameAndAge(book) {
   }).sort();
 };
 
-console.log(nameAndAge(books))
-
 // Exercício 3
 function fantasyOrScienceFiction(book) {
   return book.filter( (element) => element.genre === 'Ficção Científica' || element.genre === 'Fantasia')
 }
 
-console.log(fantasyOrScienceFiction(books))
+// Exercício 4
+function oldBooksOrdered(book) {
+  return book.filter( (element) => 2022 - element.releaseYear > 60).sort((bookA,bookB) => bookA.releaseYear - bookB.releaseYear);
+}
+
+// Exercício 5
