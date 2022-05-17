@@ -86,3 +86,8 @@ function oldBooksOrdered(book) {
 }
 
 // Exercício 5
+function fantasyOrScienceFictionAuthors(book) {
+  return book.filter( (element) => element.genre === 'Ficção Científica' || element.genre === 'Fantasia').map( (element) => `${element.author.name}`).sort();
+}
+
+// Exercício 6
