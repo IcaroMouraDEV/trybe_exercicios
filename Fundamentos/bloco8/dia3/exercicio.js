@@ -78,3 +78,10 @@ function nameAndAge(book) {
 };
 
 console.log(nameAndAge(books))
+
+// Exercício 3
+function fantasyOrScienceFiction(book) {
+  return book.filter( (element) => element.genre === 'Ficção Científica' || element.genre === 'Fantasia')
+}
+
+console.log(fantasyOrScienceFiction(books))
