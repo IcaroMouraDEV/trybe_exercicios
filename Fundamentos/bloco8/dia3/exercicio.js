@@ -95,7 +95,7 @@ function oldBooks(book) {
   return book.filter( (element) => 2022 - element.releaseYear > 60).map((element) => `${element.name}`);
 }
 
-// Exercício 7
+// Exercício 7 
 function authorWith3DotsOnName(book) {
   return book.find( (element) => element.author.name.split(' ').filter( (char) => char.endsWith('.')).length === 3).name;
 }
