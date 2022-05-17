@@ -96,3 +96,6 @@ function oldBooks(book) {
 }
 
 // Exercício 7
+function authorWith3DotsOnName(book) {
+  return book.find( (element) => element.author.name.split(' ').filter( (char) => char.endsWith('.')).length === 3).name;
+}
