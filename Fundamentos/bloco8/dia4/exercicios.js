@@ -82,4 +82,8 @@ function averageAge(array) {
   return array.reduce((acc, element) => acc + (element.releaseYear - element.author.birthYear), 0) / 6;
 }
 
-console.log(averageAge(books))
+function longestNamedBook(array) {
+  return array.reduce((acc, element) => element.name.length > acc.length ? element : acc, '');
+}
+
+
