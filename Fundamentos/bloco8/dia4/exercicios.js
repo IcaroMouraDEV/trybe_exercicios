@@ -97,4 +97,10 @@ function containsA(array) {
   return array.reduce((acc, element) => acc + element.toLowerCase().split('').reduce((accumulator, letter) => letter === 'a' ? accumulator += 1 : accumulator, 0), 0);
 }
 
-console.log(containsA(names));
+// Exercício 6
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+function studentAverage(student, average) {
+  return student.map((element, index) => ({ name: element, average: average[index].reduce((acc, number) => acc + number, 0) / average[index].length}));
+}
