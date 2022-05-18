@@ -86,4 +86,15 @@ function longestNamedBook(array) {
   return array.reduce((acc, element) => element.name.length > acc.length ? element : acc, '');
 }
 
+// Exercício 5
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
 
+function containsA(array) {
+  return array.reduce((acc, element) => acc + element.toLowerCase().split('').reduce((accumulator, letter) => letter === 'a' ? accumulator += 1 : accumulator, 0), 0);
+}
+
+console.log(containsA(names));
