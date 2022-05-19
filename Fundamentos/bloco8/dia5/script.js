@@ -103,3 +103,6 @@ const ships = [
 const shipLength = ({ name, length, measurementUnit} = ship) => `${name} is ${length} ${measurementUnit} long`;
 
 // Exercício 8
+const greet = (name, message = 'hi') => `${message} ${name}`
+
+// Exercício 9
