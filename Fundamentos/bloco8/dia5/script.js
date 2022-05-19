@@ -80,3 +80,26 @@ const chiron = ['Chiron', 'Bugatti', 2016];
 // escreva toObject abaixo
 const toObject = ([model, manufacturer, date] = car) => ({ model, manufacturer, date });
 
+// Exercício 7
+const ships = [
+  {
+    name: 'Titanic',
+    length: 269.1,
+    measurementUnit: 'meters',
+  },
+  {
+    name: 'Queen Mary 2',
+    length: 1132,
+    measurementUnit: 'feet',
+  },
+  {
+    name: 'Yamato',
+    length: 256,
+    measurementUnit: 'meters',
+  },
+];
+
+// escreva shipLength abaixo
+const shipLength = ({ name, length, measurementUnit} = ship) => `${name} is ${length} ${measurementUnit} long`;
+
+// Exercício 8
