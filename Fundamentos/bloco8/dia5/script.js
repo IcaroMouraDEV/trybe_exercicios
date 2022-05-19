@@ -14,7 +14,7 @@ rectangles.forEach((rectangle) => {
 // Exercício 2
 const sum = (...numbers) => numbers.reduce((accumulator, element) => accumulator + element, 0);
 
-console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9))
+/* console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9)) */
 
 // Exercício 3
 const alex = {
@@ -66,3 +66,10 @@ const people = [
 // escreva filterPeople abaixo
 const filterPeople = (person) =>  person.filter(({ bornIn, nationality } = element) => bornIn < 2000 && bornIn >= 1900 && nationality === 'Australian');
 
+// Exercício 5
+const myList = [1, 2, 3];
+
+// escreva swap abaixo
+const swap = ([element1, element2, element3] = array) => [element3, element2, element1];
+
+// Exercício 6
