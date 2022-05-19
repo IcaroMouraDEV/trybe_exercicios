@@ -106,3 +106,11 @@ const shipLength = ({ name, length, measurementUnit} = ship) => `${name} is ${le
 const greet = (name, message = 'hi') => `${message} ${name}`
 
 // Exercício 9
+const yearSeasons = {
+  spring: ['March', 'April', 'May'],
+  summer: ['June', 'July', 'August'],
+  autumn: ['September', 'October', 'November'],
+  winter: ['December', 'January', 'February'],
+};
+
+const monthsOfYear = ({spring, summer, autumn, winter} = year) => [...spring, ...summer, ...autumn, ...winter];
