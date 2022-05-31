@@ -39,7 +39,7 @@ const error = (error, message) => {
     console.log(message);
   }
 };
-getPokemonDetails(pokemon, error);
+/* getPokemonDetails(pokemon, error); */
 
 module.exports = {
   getPokemonDetails,
