@@ -1,0 +1,8 @@
+.pokemon {
+  display: flex;
+  flex-grow: 1;
+  border: 1px #121212 solid;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #CCC;
+}
